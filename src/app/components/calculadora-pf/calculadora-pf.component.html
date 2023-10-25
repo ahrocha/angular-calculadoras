@@ -5,6 +5,13 @@
 <h3>Renda líquida</h3>
 <h4>anual: {{ saldoLiquidoAnual | currency:'BRL':'symbol':'1.2-2' }}</h4>
 <h4>mensal: {{ saldoLiquidoMensal | currency:'BRL':'symbol':'1.2-2' }}</h4>
+
+<p [align]='"center"'>
+    <br />
+    <button mat-raised-button  color="primary" (click)="updateCalculations()">Atualizar cálculos</button>
+    <br /><br />
+</p>
+
 <h3>Débitos ou Créditos Mensais</h3>
 <mat-form-field>
     <mat-label>

@@ -13,6 +13,7 @@ import { CalculadoraPfComponent } from './components/calculadora-pf/calculadora-
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     AppRoutingModule,
     FormsModule,
     BrowserAnimationsModule,
+    MatButtonModule,
     MatFormFieldModule,
     MatInputModule,
   ],
