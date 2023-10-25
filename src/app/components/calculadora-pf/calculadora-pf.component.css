@@ -1,4 +1,10 @@
 .container {
+    width: 100%;
     display: flex;
     flex-direction: column;
+}
+
+h2, h3, h4 {
+    text-align: center;
+    padding-bottom: 10px;
 }

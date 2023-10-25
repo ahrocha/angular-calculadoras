@@ -5,3 +5,7 @@
     justify-content: center;
     align-items: top;
 }
+
+.item {
+    width: 100%;
+}

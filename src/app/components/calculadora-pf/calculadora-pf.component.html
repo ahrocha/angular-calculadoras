@@ -1,8 +1,11 @@
 <div class="container">
 
 <h2>PF</h2>
-<h3>anual: {{ saldoLiquidoAnual | currency:'BRL':'symbol':'1.2-2' }}</h3>
-<h3>mensal: {{ saldoLiquidoMensal | currency:'BRL':'symbol':'1.2-2' }}</h3>
+
+<h3>Renda líquida</h3>
+<h4>anual: {{ saldoLiquidoAnual | currency:'BRL':'symbol':'1.2-2' }}</h4>
+<h4>mensal: {{ saldoLiquidoMensal | currency:'BRL':'symbol':'1.2-2' }}</h4>
+<h3>Débitos ou Créditos Mensais</h3>
 <mat-form-field>
     <mat-label>
 Salário bruto mensal:</mat-label>
@@ -13,19 +16,27 @@ Salário bruto mensal:</mat-label>
     <mat-label>
 Impostos:</mat-label>
 <input matInput type="number" [(ngModel)]="impostosMensal" (change)="updateCalculations()" (keypress)="updateCalculations()" /><br />
-
 </mat-form-field>
 
 <mat-form-field>
-    <mat-label>Benefícios mensais:</mat-label>
-    <input matInput type="number" [(ngModel)]="extrasMensal" (change)="updateCalculations()" (keypress)="updateCalculations()" /><br />
+    <mat-label>VA/VR  mensal:</mat-label>
+    <input matInput type="number" [(ngModel)]="vrvaMensal" (change)="updateCalculations()" (keypress)="updateCalculations()" /><br />
+</mat-form-field>
 
-    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Outros benefícios mensais:</mat-label>
+        <input matInput type="number" [(ngModel)]="extrasMensal" (change)="updateCalculations()" (keypress)="updateCalculations()" /><br />
+    
+        </mat-form-field>
+
+    <h3>Débitos ou Créditos Anuais</h3>
 
     <mat-form-field>
         <mat-label>Bonus anuais:</mat-label>
         <input matInput type="number" [(ngModel)]="bonusAnual" (change)="updateCalculations()" (keypress)="updateCalculations()" /><br />
     </mat-form-field>
+
+    <h3>Cálculos (@TODO)</h3>
     <br />
     <br />
 salario bruto anual: {{ salarioAnualBruto | currency:'BRL':'symbol':'1.2-2' }}<br />
