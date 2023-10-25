@@ -33,7 +33,7 @@ export class CalculadoraPjComponent implements OnChanges {
     this.salarioAnualBruto = this.salarioMensal * 12;
     this.salarioAnualLiquido = this.salarioAnualBruto - (this.salarioAnualBruto * this.impostosMensal);
     this.custosFixosMensais = this.planoDeSaudeMensal + this.custoFixoMensal;
-    this.custosFixosAnuais = this.custosFixosMensais * 12 + this.custoFixoAnual;
+    this.custosFixosAnuais = (this.custosFixosMensais * 12) + this.custoFixoAnual;
     this.saldoLiquidoAnual = this.salarioAnualLiquido - this.custosFixosAnuais;
     this.saldoLiquidoMensal = this.saldoLiquidoAnual / 12;
   }

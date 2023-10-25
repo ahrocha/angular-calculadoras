@@ -11,21 +11,21 @@
 </mat-form-field>
 <mat-form-field>
     <mat-label>Impostos Mensal</mat-label>
-    <input matInput type="number" [(ngModel)]="impostosMensal" />
+    <input matInput type="number" [(ngModel)]="impostosMensal" (change)="updateCalculations()" (keypress)="updateCalculations()" />
 </mat-form-field>
 <mat-form-field>
     <mat-label>Plano de Saúde Mensal</mat-label>
-    <input matInput type="number" [(ngModel)]="planoDeSaudeMensal" />
+    <input matInput type="number" [(ngModel)]="planoDeSaudeMensal" (change)="updateCalculations()" (keypress)="updateCalculations()" />
 </mat-form-field>
 <mat-form-field>
     <mat-label>Outros custos fixos mensais</mat-label>
-    <input matInput type="number" [(ngModel)]="custoFixoMensal" />
+    <input matInput type="number" [(ngModel)]="custoFixoMensal" (change)="updateCalculations()" (keypress)="updateCalculations()" />
 </mat-form-field>
 
 <h3>Débitos ou Créditos Anuais</h3>
 <mat-form-field>
     <mat-label>Custos fixos anuais</mat-label>
-    <input matInput type="number" [(ngModel)]="custoFixoAnual" />
+    <input matInput type="number" [(ngModel)]="custoFixoAnual" (change)="updateCalculations()" (keypress)="updateCalculations()" />
 </mat-form-field>
 
 <h3>Cálculos (@TODO)</h3>
