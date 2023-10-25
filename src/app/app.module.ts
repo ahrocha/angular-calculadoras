@@ -11,6 +11,8 @@ import { CalculadoraPjPfComponent } from './components/calculadora-pj-pf/calcula
 import { CalculadoraPjComponent } from './components/calculadora-pj/calculadora-pj.component';
 import { CalculadoraPfComponent } from './components/calculadora-pf/calculadora-pf.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatFormFieldModule,
+    MatInputModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

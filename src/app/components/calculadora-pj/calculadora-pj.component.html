@@ -1,18 +1,28 @@
-<h2>PJ</h2>
+<div class="container"><h2>PJ</h2>
 
-salarioMensal: <input type="number" [(ngModel)]="salarioMensal" (change)="updateCalculations()" (keypress)="updateCalculations()" /><br />
-planoDeSaudeMensal: <input type="number" [(ngModel)]="planoDeSaudeMensal" /><br />
-impostosMensal: <input type="number" [(ngModel)]="impostosMensal" /><br />
-custoFixoMensal: <input type="number" [(ngModel)]="custoFixoMensal" /><br />
+    <h3>anual: {{ saldoLiquidoAnual | currency:'BRL':'symbol':'1.2-2' }}</h3>
+    <h3>mensal: {{ saldoLiquidoMensal | currency:'BRL':'symbol':'1.2-2' }}</h3>
+<mat-form-field>
+    <mat-label>salarioMensal</mat-label>
+    <input matInput type="number" [(ngModel)]="salarioMensal" (change)="updateCalculations()" (keypress)="updateCalculations()" />
+</mat-form-field>
+<mat-form-field>
+    <mat-label>planoDeSaudeMensal</mat-label>
+    <input matInput type="number" [(ngModel)]="planoDeSaudeMensal" />
+</mat-form-field>
+<mat-form-field>
+    <mat-label>impostosMensal</mat-label>
+    <input matInput type="number" [(ngModel)]="impostosMensal" />
+</mat-form-field>
+<mat-form-field>
+    <mat-label>custoFixoMensal</mat-label>
+    <input matInput type="number" [(ngModel)]="custoFixoMensal" />
+</mat-form-field>
 <br />
 <br />
 salário bruto anual: {{salarioAnualBruto | currency:'BRL':'symbol':'1.2-2' }}<br />
-saldo líquido anual: {{saldoLiquidoAnual | currency:'BRL':'symbol':'1.2-2' }}<br />
-saldo líquido mensal: {{saldoLiquidoMensal | currency:'BRL':'symbol':'1.2-2' }}<br />
 <br />
 custos fixos anuais: {{custosFixosAnuais}}<br />
 <br />
-<br />
-<br />
-<br />
 custos fixos mensais: {{custosFixosMensais}}<br />
+</div>
