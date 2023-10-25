@@ -1,0 +1,18 @@
+<h2>PJ</h2>
+
+salarioMensal: <input type="number" [(ngModel)]="salarioMensal" (change)="updateCalculations()" (keypress)="updateCalculations()" /><br />
+planoDeSaudeMensal: <input type="number" [(ngModel)]="planoDeSaudeMensal" /><br />
+impostosMensal: <input type="number" [(ngModel)]="impostosMensal" /><br />
+custoFixoMensal: <input type="number" [(ngModel)]="custoFixoMensal" /><br />
+<br />
+<br />
+salário bruto anual: {{salarioAnualBruto | currency:'BRL':'symbol':'1.2-2' }}<br />
+saldo líquido anual: {{saldoLiquidoAnual | currency:'BRL':'symbol':'1.2-2' }}<br />
+saldo líquido mensal: {{saldoLiquidoMensal | currency:'BRL':'symbol':'1.2-2' }}<br />
+<br />
+custos fixos anuais: {{custosFixosAnuais}}<br />
+<br />
+<br />
+<br />
+<br />
+custos fixos mensais: {{custosFixosMensais}}<br />
