@@ -1,5 +1,7 @@
 # Calculadoras
 
+A calculadora que compara salários PJ x PF está em funcionamento no endereço https://calculadoras.hurpia.com.br/
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.6.
 
 ## Development server
